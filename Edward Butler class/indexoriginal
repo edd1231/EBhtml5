@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!--essential for vieiwing across devices and scales down to resolution of device it is being viewed on -->
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <meta name="description" content="This is a fictional webiste for Ed">
+        <title>Ed's Webpage</title>
+    </head>
+    <body>
+        <section>
+            <header>
+                <div id="background">
+                    <img src="HTML5/Casestudy/images/vintage.jpg" alt="">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Sales</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+            <div>
+                    <img src="HTML5/Casestudy/images/mainLogoNew.jpg" alt"" id="mainlogo">
+            </div>
+            <div>
+                <a href="#">New Arrivals</a>
+            </div>
+            <div>
+                <i>
+                </i>
+            </div>
+            <div>
+                <a>
+                </a>
+            </div>
+                </div>
+                </header>
+        </section>
+        <section>
+            <h1>Featured products</h1>
+            <article>
+                <img src="HTML5/Casestudy/featuredProducts/image1.jpg">
+                <p>
+All the best and unique vintage collection at exclusive PRICES!</p>
+            </article>
+            <figcaption>Reclaimed Vintage Sweat Dress With Back Lace Up <strong>£65.00</strong></figcaption>
+        <article>
+            <img src="HTML5/Casestudy/featuredProducts/image2.jpg">
+            </article>
+            <figcaption>
+Reclaimed Vintage Inspired Off The Shoulder Swing Dress In Lace
+<strong>£40.00</strong></figcaption>
+            <article>
+                <img src="HTML5/Casestudy/featuredProducts/image3.jpg">
+            </article>
+            <figcaption>Reclaimed Vintage Revived Military Jacket With Rolling Stones Tour Back Print
+<strong>£65.00</strong></figcaption>
+            <article>
+            <img src="HTML5/Casestudy/featuredProducts/image4.jpg">
+            </article>
+            <figcaption>
+Reclaimed Vintage Inspired Jacket And Trousers In Red Check<strong>
+FROM £113.00</strong></figcaption>
+                <article>
+            <img src="HTML5/Casestudy/featuredProducts/image5.jpg">
+            </article>
+            <figcaption>
+Reclaimed Vintage Revived Camo BDU Military Jacket<strong>£45.00</strong></figcaption>
+              <article>
+            <img src="HTML5/Casestudy/featuredProducts/image6.jpg">
+            </article>
+            <figcaption>
+Reclaimed Vintage Inspired Super Oversized Bomber Jacket In Black With Ram Back Print<strong>£105.00</strong></figcaption>
+        </section>
+       <section> 
+           <div><h1>Promotion and sales</h1></div>
+        <div><p>Drag the items to the shopping cart or click ADD TO CART and get up to 50% DISCOUNT!</p></div>
+           <article>
+               <img src="
+           </article>
+        </section>
+        <section></section>
+        <section></section>
+    </body>
+</html>
