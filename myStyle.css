@@ -1,0 +1,307 @@
+/*The apparel vintage company css file */
+/*
+COLOUR SHEET+ FONTS
+First colour: rgba(54, 91, 70, 1);
+Second colour: rgba(54, 91, 70, 0.9);
+Third colour: rgba(159, 12, 16, 1);
+Fourth colour:#444;
+font-family: 'Roboto', sans-serif;
+font-family: 'Ek Mukta', sans-serif;
+home work add cart with animate hover cursor and icon
+*/
+
+/*-----------------------------------------
+THE APPAREL VINTAGE COMPANY CSS STYLE FILE
+-------------------------------------------*/
+
+/*-----------------------------------------
+        WEBSITE COLOUR SCHEM
+-------------------------------------------*/
+/*First colour: rgba(54, 91,70, 1);
+Second colour: rgba(54, 91, 70, 0.9); 
+Third colour: rgba(159, 12, 16, 1); 
+Fourth colour: #444;
+font-family: 'Roboto', sans-serif;*/
+
+/*-----------------------------------------
+        THE GLOBAL STYLES
+-------------------------------------------*/
+
+body {
+   font-family: 'Ek Mukta', sans-serif;
+   font-size: 0.9em;
+   color: #444;
+   overflow-x: hidden;
+   margin: 0;
+   padding: 0;
+    
+    
+}
+.main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container {
+    text-align: center;
+    width: 80%;
+    background-color:darkgrey;
+    margin: auto;
+}
+
+/*img {
+    width: 100%; 
+}*/
+
+/*-----------------------------------------
+        THE HOME STYLES
+-------------------------------------------*/
+
+.bgImage {
+    background-image: url("../HTML5/CaseStudy/images/vintageHome.jpg");
+    background-position: center top;
+    /*If you change the background-size to 100% value the background image will be responsive to the screen size.*/
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    position: absolute;
+    top: 15vh;
+    left: 15vw;
+    
+}
+
+.actionB {
+    position: absolute;
+    top:70vh;
+    left: 17vw;
+    
+}
+
+.buttonD {
+    position: absolute;
+    bottom: 10vh;
+    left: 50vw;
+    
+}
+
+.scrollD {
+    background-color: rgba(54, 91, 70, 0.6);
+    padding: 15px 20px;
+    line-height: 20px;
+    border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -o-border-radius: 5px 5px 5px 5px;
+    -ms-border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid rgba(54, 91, 70, 1);
+    
+}
+
+.arrivals {
+    background-color: rgba(54, 91, 70, 0.6);
+    padding: 15px 20px;
+    line-height: 20px;
+    border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -o-border-radius: 5px 5px 5px 5px;
+    -ms-border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid rgba(54, 91, 70, 1);
+}
+
+.arrivals:hover {
+    background-color: rgba(54, 91, 70, 0.4);
+}
+
+.navC {
+    width: 100%;
+    height: auto;
+    background-color: rgba(54, 91, 70, 0.9);
+    position: fixed;
+    padding: 10px 0;
+}
+
+nav {
+    float: right;
+}
+
+nav li {
+    display: inline;
+    padding: 0 10px 0 0;
+}
+
+nav a {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+nav a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.hand {
+    position: absolute;
+    bottom: 26vh;
+    left: 40vw;
+    color: rgba(54, 91, 70, 0.9);
+}
+
+.cartbox{
+background-color:darkslategray;
+}
+
+.prods {
+    
+    column-count: 3;
+    padding: 20px 80px;
+    
+}
+
+.prodse {
+    display: inline;
+}
+.prodse img{
+     
+    width:  240px;
+    height: 360px;
+    background-position: 70% 70%;
+    background-size:     cover;
+}
+.cartlist {
+    text-align: left;
+    width: 90%;
+    margin: auto ;
+	font-family: "Roboto", sans-serif;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+	height: 250px;
+	border: 2px solid darkslategray;
+}
+.cartclass{
+	text-align: center;
+    width: 90%;
+	font-size: 1.0em;
+    margin: auto;
+	border: 2px solid black;
+	height: 200px;
+}
+.loginB{
+	column-count: 2;
+	text-align: center;
+    padding: 15px 26px;
+	margin-left: 70px;
+    line-height:50px;
+    border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -o-border-radius: 5px 5px 5px 5px;
+    -ms-border-radius: 5px 5px 5px 5px;
+	text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+  
+}
+.logins{
+	background-color: red;
+}
+.register{
+	background-color: red;
+}
+.videos{
+	width: auto;
+	height: auto;
+}
+.aboutpage{
+	background-image: url("../HTML5/CaseStudy/images/vintage.jpg");
+	text-align: center;
+	color: azure;
+    width: 100%;
+    background-color:darkgrey;
+    margin: auto;
+	 background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.layer{
+	 background-color:rgba(62,55,55,0.7);
+ 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.vidpage{
+	column-count: 2;
+	 padding: 65px 26px;
+}
+.vidtext{
+	 text-align: left;
+    width: 50%;
+    margin: auto ;
+	font-family: "Roboto", sans-serif;
+    font-size: 1.8em;
+    letter-spacing: 1px;
+	height: 500px;
+	border: 2px solid white;
+	color:white;
+	background-color: black;
+}
+.namebox{
+	 text-align: left;
+    width: 90%;
+    margin: auto ;
+	font-family: "Roboto", sans-serif;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+	height: 150px;	
+}
+.infoboxA{
+	background-color: inherit;
+	padding: 15px 20px;
+    line-height: 20px;
+    border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -o-border-radius: 5px 5px 5px 5px;
+    -ms-border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+    outline: white 2px;
+    border: 2px solid rgba(54, 91, 70, 1);
+}
+.messagebox{
+	background-color: inherit;
+	padding: 15px 20px;
+    line-height: 20px;
+    border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -o-border-radius: 5px 5px 5px 5px;
+    -ms-border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+    outline: white 2px;
+    border: 2px solid rgba(54, 91, 70, 1);
+}
