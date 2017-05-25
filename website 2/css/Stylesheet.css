@@ -1,0 +1,61 @@
+.container {
+    width: 80%;
+    height: 100%;
+    margin: 100px auto;
+}
+/*header style*/
+.headerbar{
+    column-count: 2;
+    width: 80%;
+    margin: auto;
+    background-color: aquamarine;
+}
+.headclass img{
+    width: 30%
+}
+.headclass{
+    width: 50%;
+    
+}
+.search{
+    column-count: 2;
+    margin-top: 20px;
+    padding: 10px 0px 5px 0px;
+}
+.textsearch{
+    text-align: right;
+    width: 95%;
+    margin-top: 15px;
+    background-color: red;
+    display: inline-block;
+}
+.searchTerm{
+    margin-bottom: 10px;
+}
+
+#myInput {
+    display: inline-block;
+    width: 70%;
+    background-color: brown;
+    float: left;
+    margin-top: 19px;
+}
+/*end of header style*/
+
+.navC{
+    background-image: url(/images/guitars.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
+.bgimage{
+    display: none;
+}
+.navBar{
+    width: 25%;
+    background-color: blue;
+}
+.navBar li{
+    font-size: 1.6em;
+    padding: 15px 0px 15px 0px;
+}
