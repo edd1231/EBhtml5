@@ -1,0 +1,144 @@
+.container {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+/*header style*/
+.headerbar{
+    column-count: 2;
+    width: 80%;
+    margin: auto;
+/*    background-color: aquamarine;*/
+}
+.headclass img{
+    width: 35%
+}
+.headclass{
+    width: 50%;
+    
+}
+.search{
+    column-count: 2;
+    margin-top: 20px;
+    padding: 10px 0px 5px 0px;
+}
+.textsearch{
+    text-align: right;
+    width: 95%;
+    margin-top: 25px;
+/*    background-color: red;*/
+    display: inline-block;
+}
+.searchTerm{
+    margin-bottom: 10px;
+}
+
+#myInput {
+    display: inline-block;
+    width: 70%;
+/*    background-color: brown;*/
+    float: left;
+    margin-top: 32px;
+}
+/*end of header style*/
+
+.navC{
+    background-image: url(/images/guitar-banner-sm.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    position: relative;
+    z-index: -100;
+}
+.bgimage{
+    display: none;
+}
+.navBar{
+    
+    width: 20%;
+    background-color: darkred;
+    padding-bottom: 3%;
+    padding-right: 5%;
+    padding-left: 2%;
+}
+.navBar li{
+    margin-right: auto 50px;
+    font-size: 1.0em;
+    padding: 5px 0px 15px 0px;
+    list-style-type: none;
+    border-bottom: 1px solid white;
+    color: white;
+    font-family: 'Rock Salt', cursive;
+    
+}
+.bg1{
+    position: absolute;
+    background-color: darkred;
+    /*margin-right: 20% 10%;*/
+    /*height: 35vh;*/
+    float: right;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    width: 5%;
+    height: 100%;
+}
+.bg2{
+    position: absolute;
+    background-color: darkred;
+    /*margin-right: 20% 10%;*/
+    /*height: 35vh;*/
+    float: left;
+    z-index: 100;
+    top: 0;
+    left: 25%;
+    opacity: 0.9;
+    width: 10%;
+    height: 100%;
+}
+.bg3{
+    position: absolute;
+    background-color: darkred;
+    /*margin-right: 20% 10%;*/
+    /*height: 35vh;*/
+    float: left;
+    z-index: 100;
+    top: 0;
+    left: 35%;
+    opacity: 0.6;
+    width: 3%;
+    height: 100%;
+}
+.bg4{
+    position: absolute;
+    background-color: darkred;
+    color: white;
+    font-family: 'Rock Salt', cursive;
+    margin-right: 20% 10%;
+    /*height: 35vh;*/
+    z-index: 100;
+    top: 70%;
+    left: 60%;
+    opacity: 0.7;
+    text-align: center;
+    width: 35%;
+}
+/*End of Nav Bar section*/
+
+.section2{
+    position: relative;
+    background-color: aqua;
+    column-count: 6;
+    height: 800px;
+}
+.p1c1{
+    float: left;
+    background-color: red;
+    transform: rotate(90deg);
+    padding-left: 2%;
+    padding-bottom: 20%;
+    padding-top: 10%;
+}
+.p1c2{
+    float: left;
+}
