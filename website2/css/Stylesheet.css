@@ -126,19 +126,70 @@
 /*End of Nav Bar section*/
 
 .section2{
-    position: relative;
-    background-color: aqua;
-    column-count: 6;
-    height: 800px;
+    width: 100%;
+/*    position: relative;*/
+/*    column-count: 3;*/
+  display: inline-block;
+/*    height: auto;*/
+}
+.section2 h2{
+  padding-top: 20px;
+  text-align: center;
+  transform: rotate(-90deg);
+  color: antiquewhite;
+ 
+}
+.section2 li{
+  list-style-type: none;
+  font-size: 1.0em;
+  padding-bottom: 8px;
 }
 .p1c1{
+/*    position: absolute;*/
     float: left;
-    background-color: red;
-    transform: rotate(90deg);
-    padding-left: 2%;
-    padding-bottom: 20%;
-    padding-top: 10%;
+  margin-left: 2px;
+  width: 7%;
+/*    left=500px;*/
+/*    left: 0;*/
+/*    margin-top: 66px;*/
+    background-color: darkred;
+    height: 250px;
 }
 .p1c2{
-    float: left;
+  float: left;
+  width: 26%;
+
+  height: 80%;
+/*  padding-right: 20px;*/
 }
+.p1c3{
+  float: left;
+  width:7%;
+  background-color: darkred;
+  height: 250px;
+  
+}
+.p1c4{
+  width:25%;
+  float: left;
+
+  
+}
+.p1c5{
+  width: 7%;
+  float: left;
+  height: 250px;
+  background-color: darkred;
+  
+}
+.p1c6{
+  top: 0;
+  right: 0;
+  width:25%;
+  float: left;
+  
+}
+.p1c6 i{
+  float: right;
+}
+
