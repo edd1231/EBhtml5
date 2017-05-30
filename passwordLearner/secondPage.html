@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Web Storage API</title>
+    </head>
+    <body>
+        
+        <h1> Web Storage Demo </h1>
+        <a href="firstPage.html">Go to the other page</a>
+        <script>
+//            localStorage.clear();
+//            document.write("<h1>Hi " +localStorage.username+ "</h1>")
+//            document.write("<h1>Hi " +sessionStorage.username+ "</h1>")
+            
+//            web storage stores arrays / key alphabetically 
+            document.write("<h1>" +localStorage.getItem(localStorage.key(1)) +"</h1>");
+            document.write("<h1>" +localStorage.length+"</h1>");
+            localStorage.removeItem("country");
+            
+        
+        </script>
+    </body>
+    
+</html>
