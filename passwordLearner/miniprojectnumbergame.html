@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<title>random number game</title>
+</head>
+<body>
+<h1>Javascript</h1>
+<h2>guess number between 1 and 10</h2>
+<input type="button" value="guess the number" id="button1" onclick="forloop()"/>
+
+	
+	<p id="result"></p>
+	<h1 id="result1"></h1>
+	
+
+
+<script>
+	var randomNumber = Math.floor((Math.random()*10)+1);
+	var guessnumber =0;
+   document.getElementById("button1").onclick = function() {
+       var guess = prompt("guess a number between 1 and 10");
+	   do{
+		   guessnumber++;
+		  var guess = prompt("have another go at guessing between 1 and 10");
+	   }
+	   while (guess != randomNumber);
+	   if (guess == randomNumber){
+		   alert("Well done you guessed correctly!");
+		   document.getElementById("result").innerHTML="you guessed in " + guessnumber + " attempts";
+		   document.getElementById("result1").innerHTML="correct number was " + randomNumber; 
+	   }
+        
+    }
+</script>	
+</body>
+</html>
