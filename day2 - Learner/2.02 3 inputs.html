@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<title> 3 inputs</title>
+</head>
+<body>
+<h1>Sum</h1>
+<h2>Add three variables with a function</h2>
+<input id="input1" type=”number”/> + 
+<input id="input2" type=”number”/> + 
+<input id="input3" type=”number”/>
+
+	<input type="button" id="answer2" value="Answer2" />
+    
+	
+	<span id="result"></span>
+	
+<script>	
+   
+    document.getElementById("answer2").onclick=function(a1,b2,c3){
+         var a1 =document.getElementById("input1").value;
+      var b2 = document.getElementById("input2").value;
+      var c3 = document.getElementById("input3").value;
+        
+	var sum2 = parseInt(a1) + parseInt(b2) + parseInt(c3);
+        document.getElementById("result").innerHTML = sum2;
+    }
+</script>
+
+</body>
+</html>

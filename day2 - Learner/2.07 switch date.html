@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+
+    var timemaster;
+    var timemaster2;
+    var timetoday = new Date();
+        var todayTime1 = timetoday.getHours();
+    var todayTime2 = timetoday.getMinutes() ;
+    var todayTime3=timetoday.getDay();
+//    var func1 = function(){
+switch (new Date().getDay()) {
+    case 0:
+        day = "Sunday";
+        break;
+    case 1:
+        day = "Monday";
+        break;
+    case 2:
+        day = "Tuesday";
+        break;
+    case 3:
+        day = "Wednesday";
+        break;
+    case 4:
+        day = "Thursday";
+        break;
+    case 5:
+        day = "Friday";
+        break;
+    case 6:
+        day = "Saturday";
+}
+
+ //   }
+   timemaster2 = timemaster + timetoday.getHours + timetoday.getMinutes;
+    document.getElementById("demo").innerHTML= day + " ," + todayTime1+":"+todayTime2;
+</script>
+
+</body>
+</html>
