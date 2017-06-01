@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<title>Interest calculator</title>
+
+
+</head>
+<body>
+<h1>Interest calculator</h1>
+<h2></h2>
+    <p> amount to borrow:</p>
+<input id="input1" type=”number”/><br>
+    <p> interest rate p.a: </p>
+<input id="input2"  type=”number”/><br>
+    <p>Length of loan in months:</p>
+<input id="input3"  type=”number”/><br>
+<input type="button" value="Calculate interest" id="click1" onclick="lab67()"/>
+<span id="result"></span><br>
+<span id="result1"></span><br>
+<span id="difference1"></span>
+
+
+<script>
+  document.getElementById("click1").onclick=function(){
+      //maths
+        var borrow1 =document.getElementById("input1").value;
+        var interest1 = (document.getElementById("input2").value)/100;
+        var time1 = document.getElementById("input3").value;
+        var monthlytotal = parseFloat((borrow1*interest1)/12);
+        var total1 = parseFloat(borrow1)+parseFloat(monthlytotal*time1); 
+        var difference = parseFloat(total1 - borrow1); 
+   //results   
+        document.getElementById("result").innerHTML = "The total amount you need to repay is £" + parseFloat(total1).toFixed(2);
+        document.getElementById("result1").innerHTML = "The total amount you need to repay per month is £" + parseFloat(monthlytotal).toFixed(2);
+      
+    
+      
+      document.getElementById("difference1").innerHTML= "The total payable due to interest is £" + parseFloat(difference).toFixed(2);
+    }
+</script>
+
+
+</body>
+</html>
