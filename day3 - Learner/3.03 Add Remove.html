@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<title>Javascript pop element from array</title>
+
+</head>
+<body>
+<h1>Javascript labs</h1>
+<h2>Lab 22 - Pop element from array</h2>
+<input id="lab22input" />
+<!--  add element to end of array -->
+<input type="button" value="Push member to array" id="button1" onclick="lab22push(lab22input.value)" />
+<!--  remove last element of the array -->
+<input type="button" value="Pop member from array" id="button2" onclick="lastpop()" />
+<!--  remove the first element of the array -->
+<input type="button" value="Shift member from array" id="button3" onclick="firstshift()" />
+<!--  add to the first element of the array -->
+<input type="button" value="Shift member from array" id="button4" onclick="firstunshift(lab22input.value)" />
+
+<p id="lab22result"></p>
+<p id="lab22result"></p>
+	
+<script>
+    var array1 = [5,9,12,16];
+    document.getElementById("button1").onclick = function() {
+        
+    var x1 = document.getElementById("lab22input").value;
+        array1.push(x1);
+        document.getElementById("lab22result").innerHTML= array1;
+    }
+    document.getElementById("button2").onclick = function() {
+    var x2  = array1.length;
+        array1.splice((x2-1),1);
+    document.getElementById("lab22result").innerHTML= array1;    
+    }
+    document.getElementById("button3").onclick = function() {
+    var x2  = array1.length;
+        array1.shift();
+    document.getElementById("lab22result").innerHTML= array1;    
+    }
+     document.getElementById("button4").onclick = function() {
+        
+    var x1 = document.getElementById("lab22input").value;
+        array1.unshift(x1);
+        document.getElementById("lab22result").innerHTML= array1;
+    }
+
+</script>
+
+</body>
+</html>

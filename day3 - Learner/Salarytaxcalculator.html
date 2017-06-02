@@ -1,0 +1,112 @@
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.js"></script>
+    <script src="http://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<title>Salary Calculator</title>
+
+</head>
+<body>
+<h1>Salary calculator</h1>
+<h2>Find out how much tax you pay on your annual salary</h2>
+    <p>Enter your salary:</p>
+    <input id="input1" /> 
+<button type="button" id="button1" onclick="looparray()">Calculate</button>
+<p id="myarray"></p><br>
+    <p>Gross Salary: </p><p id="salary1"></p>
+    <p>Tax Bracket: </p><p id="salary2"></p>
+    <p>Tax Paid: </p><p id="salary3"></p>
+    <p>Net Salary: </p><p id="salary4"></p>
+  <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+    
+
+<script>
+    var taxfinal;
+    var finalsalary;
+    
+document.getElementById("button1").onclick = function() {
+    var s1 = document.getElementById("input1").value;
+    var persAllowance = 11500;
+    var secAllowance = 45000;
+    var thirdAllowance = 150000;
+    var bracket1 = parseFloat((s1 - persAllowance)*0.2);
+    var finBracket1 = parseFloat(s1-bracket1);
+    
+    var bracket2 = parseFloat((s1 - secAllowance)*0.4);
+    var Maxbracket1 = ((45000 - 11500)*0.2);
+    var finBracket2 = parseFloat((s1 - bracket2 - Maxbracket1 ));
+    var taxpaid1 = bracket2 + Maxbracket1;
+    console.log(Maxbracket1);
+    
+    
+    var bracket3 = parseFloat((s1 - thirdAllowance)*0.45);
+    var Maxbracket2 = ((150000 - 45000)*0.4);
+    var finBracket3 = parseFloat((s1 - bracket3 - Maxbracket2 - Maxbracket1));
+    var taxpaid2 = bracket3 + Maxbracket1 + Maxbracket2;
+
+    //no bracket
+    if (s1 < persAllowance){
+        document.getElementById("salary1").innerHTML = " £"+s1;
+        document.getElementById("salary2").innerHTML = "Not in a tax bracket";
+        document.getElementById("salary3").innerHTML = " £"+ "0";
+        document.getElementById("salary4").innerHTML = "£"+s1;
+        taxfinal=0;
+        finalsalary =s1;
+    }
+  //first bracket  
+    else if (s1 > persAllowance && s1 < secAllowance){
+        document.getElementById("salary1").innerHTML = " £"+s1;
+        document.getElementById("salary2").innerHTML = "Lower tax bracket";
+        document.getElementById("salary3").innerHTML = " £"+ bracket1;
+        document.getElementById("salary4").innerHTML = "£"+finBracket1;
+        taxfinal= bracket1;
+        finalsalary = finBracket1;
+    }
+    //second bracket
+    else if (s1 > secAllowance && s1 < thirdAllowance) {
+        document.getElementById("salary1").innerHTML = " £"+s1;
+        document.getElementById("salary2").innerHTML = "Higher tax bracket";
+        document.getElementById("salary3").innerHTML = " £"+ taxpaid1;
+        document.getElementById("salary4").innerHTML = "£"+finBracket2;
+        taxfinal= taxpaid1;
+        finalsalary = finBracket2;
+    }
+    else if (s1 > thirdAllowance) {
+        document.getElementById("salary1").innerHTML = " £"+s1;
+        document.getElementById("salary2").innerHTML = "Additional tax bracket";
+        document.getElementById("salary3").innerHTML = " £"+ taxpaid2;
+        document.getElementById("salary4").innerHTML = "£"+finBracket3;
+        taxfinal= taxpaid2;
+        finalsalary = finBracket3;
+    }
+    var chart = new CanvasJS.Chart("chartContainer", {
+		theme: "theme2",//theme1
+		title:{
+			text: "Chart to show breakdown of tax paid on earnings"              
+		},
+		animationEnabled: false,   // change to true
+		data: [              
+		{
+			// Change type to "bar", "area", "spline", "pie",etc.
+			type: "pie",
+			dataPoints: [
+				{ label: "Salary after tax",  y: bracket1  },
+				{ label: "Tax", y: taxfinal  }
+//				{ label: "Additional tax bracket", y: taxpaid2  },
+//				{ label: "net salary", y: finalsalary  }
+
+			]
+		}
+		]
+	});
+	chart.render();
+
+}
+
+	
+</script>
+
+
+
+</body>
+</html>
